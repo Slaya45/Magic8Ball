@@ -180,7 +180,7 @@
 
 
 
-body {
+  body {
     text-align: center;
     margin: 0;
     display: flex;
@@ -188,8 +188,8 @@ body {
     justify-content: center;
     height: 100vh;
     background-image: radial-gradient( #003366, #225082, #3b2b52, #591b6b, #85144b);
-
 }
+
 #container {
     height: 80vh;
     width: 80%; 
@@ -208,39 +208,40 @@ img {
     width: 90%; 
     height: auto;
 }
-#magicBall{
+#magicBall {
     height: auto;
     width: 100%;
 }
 
-
 #answerDisplay {
     font-size: 2vh;
     font-weight: 800;
-    background-color: transparent; 
+    background-color: transparent;
     color: transparent;
-    color: rgb(255, 255, 255);
-    transition: background-color 2s, color 2s;
-    border: 20px solid #ffffff;
-    border-color: #091a74;
+    border: 20px solid rgba(255, 255, 255, 0); /* Transparent border */
+    border-color: #000000;
+    transition: background-color 2s, color 2s, border-color 2s; /* Added border-color to the transition */
     position: absolute;
     top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 17vh;
-    width: 17vh; 
+    width: 17vh;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
+
 #answerDisplay.fade-in {
     background-color: rgba(9, 26, 116, 1);
-    color: rgba(255, 255, 255, 1); 
+    color: rgba(255, 255, 255, 1);
+    border-color: #091a74; /* Set the border color when becoming visible */
 }
+
 #textBox {
     border: none;
     border-radius: 1vw;
@@ -269,17 +270,9 @@ input {
     max-width: 500px; 
 }
 
-#buttonEnter {
+#buttonEnter,
+#buttonReset {
     background-color: #4bb1f6;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 1vh;
-    border-radius: .5vh;
-    cursor: pointer;
-    font-weight: 600;
-}
-#buttonReset{
-    background-color: #6996b4;
     color: rgb(0, 0, 0);
     border: none;
     padding: 1vh;
@@ -291,6 +284,30 @@ input {
 #buttonEnter:hover {
     background-color: #0063a0;
 }
+
+#buttonReset {
+    background-color: #6996b4;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1vh;
+    border-radius: .5vh;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 #buttonReset:hover {
     background-color: #098bdb;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 90%;
+    }
+
+    #answerDisplay {
+        top: 30%;
+        height: 15vh;
+        width: 15vh;
+    }
 }
