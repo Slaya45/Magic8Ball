@@ -1,7 +1,7 @@
-const ballAnswers = ["Lukas Said", "10 Steps Forward 9 Steps Back", "Go Ask Someone Else", "Do You Need a Nap?", 
-"Those Guy's!","Did You Try Turning it Off and then On?","Its Only Right after the 10th Redesign", "SG5?","Stan Is In Charge!", 
+const ballAnswers = ["Lukas Said", "Take 10 Steps Forward 9 Steps Back", "Go Ask Someone Else", "Do You Need a Nap?", 
+"Those Guy's!","Thats Wrong Just Start Over, Cause Lukas Said.", "SG5?","Stan Is In Charge!", 
 "Just Do What They Say, Thats What Your Paid For.", "You're Not Payed to Ask Question's Just Do What They Say","Hydrogen Circuit?",
-"You'll Get That in 5-10 Buisness Months"];
+"You'll Get Your Answer in 10 Buisness Months", "Let Me Ask Lukas."];
 
 function getRandomAnswer(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
