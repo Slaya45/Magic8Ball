@@ -222,7 +222,7 @@ img {
     border-color: #000000;
     transition: background-color 2s, color 2s, border-color 2s; /* Added border-color to the transition */
     position: absolute;
-    top: 38%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 17vh;
@@ -306,7 +306,7 @@ input {
     }
 
     #answerDisplay {
-        top: 38%;
+        top: 34%;
         height: 15vh;
         width: 15vh;
     }
