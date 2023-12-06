@@ -1,4 +1,5 @@
-const ballAnswers = ["Lukas Said", "Try Again", "Your Dumb", "HA"];
+const ballAnswers = ["Lukas Said", "10 Steps Forward 9 Steps Back", "Go Ask Someone Else", "Do You Need a Nap?", 
+"Those Guy's!","Did You Try Turning Off and then On?","Its Only Right after the 3rd Try", "SG5?"];
 
 function getRandomAnswer(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
