@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-area">
+        <div class ="circles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            
+        </div>
+    </div>
+
+
+
+
+    <div id="container">
+        <div id="magicBall">
+                <img src="images/8Ball.png" alt="Description of the image">
+            <div id="answerDisplay"></div>
+        </div>
+    
+        <div id="textBox">
+            <p>Ask and you shall receive</p>
+            <input type="text" id="userInput" name="userInput" placeholder="Type here">
+            <button type="button" id="buttonEnter" onclick="displayRandomAnswer()">ENTER</button>
+            <button type="button" id="buttonReset"onclick="resetDisplay()">RESET</button>
+        </div>
+    </div>
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        </style>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
